@@ -81,7 +81,10 @@ class User extends Authenticatable
 
     }
 
-
+    public function bufferPosts()
+    {
+        return $this->hasMany('BufferPosting');
+    }
 
     
 

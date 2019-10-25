@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container-fluid app-body">
-	<h3>Social Accounts 
+	<h3>Social Accounts
 
 	@if($user->plansubs())
 		@if($user->plansubs()['plan']->slug == 'proplusagencym' OR $user->plansubs()['plan']->slug == 'proplusagencyy' )

@@ -97,6 +97,7 @@ Route::get('/analytics/', 'PagesController@analytics')->name('analytics');
 Route::get('/calendar/', 'PagesController@calendar')->name('calendar');
 Route::get('/support/', 'PagesController@support')->name('support');
 Route::get('/start/', 'PagesController@start')->name('start');
+Route::get('/history/', 'PagesController@history')->name('history');
 
 
 Route::post('/settings/timezone/', 'PagesController@history')->name('saveTimezone');

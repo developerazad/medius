@@ -183,6 +183,18 @@ class PagesController extends Controller
     {
         return view('auth.friday');
     }
+    public function history()
+    {
+        $user = User::find(Auth::id());
+        $bufferPosts = BufferPosting::bufferPosts();
+        //$this->pr($bufferPosts);
+        return view('pages.history')->with('user', $user)->with('bufferPosts', $bufferPosts);
+    }
+    public function pr($data){
+        echo '<pre>';
+        print_r($data);
+        exit();
+    }
 
 
 }
